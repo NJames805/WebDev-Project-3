@@ -77,7 +77,7 @@ class App extends Component {
       }
       //update balance
       this.setState({
-        accountBalance: credit - debit,
+        accountBalance: Number((credit - debit).toFixed(2)),
         creditList: clist,
         debitList: dlist,
         isLoading: false 
